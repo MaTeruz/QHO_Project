@@ -44,7 +44,7 @@ n = 60                              # for den n=60 energy stadie
 
 x = np.linspace(-12, 12, 5000)      # hvor functionen er defineret
 
-plt.plot(x, np.abs(psi(n,x))**2, label=r"$|\psi_{60}|^2$")
+plt.plot(x, np.abs(psi(n,x))**2, label=r"$|\psi_{60}|^2$")      # probability density |\psi_{60}(x)|^2
 
 plt.xlim(-15, 15)       # limit x-akse fra -15 til 15
 plt.ylim(0, 0.2)        # limit y-akse fra 0 til 0.2

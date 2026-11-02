@@ -4,6 +4,9 @@ from scipy.special import hermite
 from math import factorial
 from sympy import symbols, exp, I
 from sympy.physics.quantum.constants import hbar
+import os
+
+os.makedirs("Graphs", exist_ok=True)
 
 E = 5 # number of energi states 
 
@@ -38,6 +41,8 @@ plt.title("QHO: Potential and the first 5 energy states")                       
 plt.legend()
 plt.grid()
 
+plt.savefig("Graphs/Figure_1_first_5_energy_QHO", dpi=300)
+
 plt.figure(figsize=(10, 6))
 
 n = 60                              # for den n=60 energy stadie
@@ -54,5 +59,7 @@ plt.ylabel(r"$|\psi(\xi)|^2$")                              # y-akse titel
 plt.title(r"Probability density $|\psi_{60}(\xi)|^2$")      # plot titel  
 plt.legend()
 plt.grid()
+
+plt.savefig("Graphs\Figure_1_probability_density_60", dpi=300)
 
 plt.show()
